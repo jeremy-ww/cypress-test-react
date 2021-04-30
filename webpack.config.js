@@ -8,10 +8,13 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js"],
+  },
   module: {
     rules: [
       {
-        test: /\.tsx/,
+        test: /\.tsx?/,
         exclude: /node_modules/,
         use: [
           {
