@@ -1,7 +1,7 @@
 const path = require("path");
 
 /** @type {import('webpack').Configuration} */
-module.exports = {
+const config = {
   entry: "./src/App.tsx",
   mode: "development",
   devtool: "inline-source-map",
@@ -26,3 +26,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = config;
