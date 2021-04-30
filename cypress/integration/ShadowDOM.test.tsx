@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "@cypress/react";
-import ShadowDOM from "./ShadowDOM";
+import ShadowDOM from "../../src/ShadowDOM";
 
 it("renders learn react link", () => {
   mount(<ShadowDOM />);
