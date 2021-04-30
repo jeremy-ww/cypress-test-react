@@ -13,7 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "NODE_ENV=test cypress run-ct -b chrome",
-    "test:ci": "NODE_ENV=test cypress run-ct -b chrome --headless",
+    "test:ci": "yarn run test --headless",
+    "test:debug": "yarn run test --no-exit",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
