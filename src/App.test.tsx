@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "@cypress/react";
-import App from "../../src/App";
+import App from "./App";
 
 beforeEach(() => {
   cy.intercept("GET", "https://www.example.com/widgets", {
