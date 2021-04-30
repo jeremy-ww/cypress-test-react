@@ -12,9 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "NODE_ENV=test cypress run-ct",
+    "test": "NODE_ENV=test cypress run-ct -b chrome",
     "test:ci": "NODE_ENV=test cypress run-ct -b chrome --headless",
-    "test:debug": "NODE_ENV=test cypress open-ct",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
