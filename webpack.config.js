@@ -1,5 +1,9 @@
+/// <reference path="webpack">
 const path = require("path");
 
+/**
+ * @types {Webpack}
+ */
 module.exports = {
   entry: "./src/App.tsx",
   mode: "development",
