@@ -1,8 +1,7 @@
-/// <reference path="webpack">
 const path = require("path");
 
 /**
- * @types {Webpack}
+ * @type {import('webpack').Configuration}
  */
 module.exports = {
   entry: "./src/App.tsx",
