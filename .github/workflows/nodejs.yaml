@@ -10,9 +10,8 @@ jobs:
     container: cypress/browsers:node12.6.0-chrome77
     steps:
       - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
-        with:
-          browser: chrome
       - name: test
-        run: yarn run test:ci
+        run: |
+          yarn
+          yarn run test:ci
         
