@@ -11,7 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
+        with:
+            browser: chrome
       - name: test
         run: yarn run test:ci
-        with:
-          browser: chrome
+        
