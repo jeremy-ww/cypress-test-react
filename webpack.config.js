@@ -3,20 +3,24 @@ const webpack = require("webpack");
 
 /** @type {import('webpack').Configuration} */
 const config = {
-  entry: "./src/App.tsx",
-  mode: "development",
-  devtool: "inline-source-map",
-  output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
-  },
+  devtool: "source-map",
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
+    alias: {
+      cypress: path.resolve(__dirname, "./cypress"),
+    },
   },
+  // NOTE: we don't use webpack@5 yet.
+  // cache: {
+  //   type: "filesystem",
+  //   buildDependencies: {
+  //     config: [__filename],
+  //   },
+  // },
   module: {
     rules: [
       {
-        test: /\.tsx?/,
+        test: /\.(t|j)sx?$/,
         exclude: /node_modules/,
         use: [
           {
