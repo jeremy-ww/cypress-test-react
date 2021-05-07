@@ -7,10 +7,10 @@ const config = {
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
-      cypress: path.resolve(__dirname, "./cypress"),
+      cypress: path.resolve(__dirname, "."),
     },
   },
-  // NOTE: we don't use webpack@5 yet.
+  // NOTE: we can't use webpack@5 yet.
   // cache: {
   //   type: "filesystem",
   //   buildDependencies: {
