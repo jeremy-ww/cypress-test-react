@@ -21,6 +21,7 @@ const config = {
     rules: [
       {
         test: /\.(t|j)sx?$/,
+        // NOTE: If we wanna mocking imports from node_module, please include that module.
         exclude: /node_modules/,
         use: [
           {
